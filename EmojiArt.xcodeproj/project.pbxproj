@@ -64,8 +64,8 @@
 			children = (
 				D74E67DA24E701C9006FF350 /* EmojiArtDocumentView.swift */,
 				D74E67EA24E70265006FF350 /* EmojiArtDocumentVM.swift */,
-				D78BFB1724E77FF400298F5E /* EmojiArtExtensions.swift */,
 				D78BFB1524E77A6300298F5E /* EmojiArtModel.swift */,
+				D78BFB1724E77FF400298F5E /* EmojiArtExtensions.swift */,
 				D74E67D624E701C9006FF350 /* AppDelegate.swift */,
 				D74E67D824E701C9006FF350 /* SceneDelegate.swift */,
 				D74E67DC24E701D5006FF350 /* Assets.xcassets */,

@@ -3,7 +3,7 @@
 //  EmojiArt
 //
 //  Created by Augusto Spinelli on 14/08/20.
-//  Copyright © 2020 Augusto Spinelli. All rights reserved.
+//  Copyright © 2020 Augusto Spinelli. All rights reserved
 //
 
 import Foundation
@@ -15,8 +15,8 @@ struct EmojiArtModel {
     
     struct Emoji : Identifiable{
         let text : String
-        var x : Int
-        var y : Int
+        var x : Int //offset from center
+        var y : Int //offset from center
         var size : Int
         let id: Int
         

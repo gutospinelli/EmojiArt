@@ -3,7 +3,7 @@
 //  EmojiArt
 //
 //  Created by Augusto Spinelli on 14/08/20.
-//  Copyright © 2020 Augusto Spinelli. All rights reserved.
+//  Copyright © 2020 Augusto Spinelli. All rights reserved
 //
 
 import SwiftUI
@@ -15,6 +15,8 @@ class EmojiArtDocumentVM : ObservableObject {
     @Published private var emojiArtModel : EmojiArtModel = EmojiArtModel()
     
     @Published private(set) var backgroundImage : UIImage?
+    
+    var emojis : [EmojiArtModel.Emoji] { emojiArtModel.emojis }
     
     // MARK: - Intent(s)
     
@@ -60,7 +62,14 @@ class EmojiArtDocumentVM : ObservableObject {
                     }
                     
                 }
-            }
+            } 
         }
     }
 }
+
+extension EmojiArtModel.Emoji {
+    var fontSize: CGFloat { CGFloat(self.size) }
+    var location: CGPoint { CGPoint(x: CGFloat(x), y: CGFloat(y)) }
+}
+
+
